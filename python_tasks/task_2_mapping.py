@@ -4,7 +4,14 @@
 
 def count_categories(categories):
     # TODO: Write your logic here
-    pass
+    my_dict = {} 
+
+    for item in categories: 
+        if item in my_dict.keys:
+            my_dict[item] += 1
+        else:
+            my_dict[item] = 1   
+
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']
