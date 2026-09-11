@@ -3,7 +3,7 @@
 
 def get_vehicle_year(data):
     # TODO: Write your logic here safely
-    pass
+    return data["specs"]["model_info"]["year"]
 
 # Test Case
 vehicle = {'specs': {'model_info': {'year': 2024}}}
