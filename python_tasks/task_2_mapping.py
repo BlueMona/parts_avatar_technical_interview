@@ -7,7 +7,7 @@ def count_categories(categories):
     my_dict = {} 
 
     for item in categories: 
-        if item in my_dict.keys:
+        if item in my_dict.keys():
             my_dict[item] += 1
         else:
             my_dict[item] = 1   
