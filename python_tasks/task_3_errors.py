@@ -7,8 +7,14 @@ def calculate_discount(price, discount_percent):
     or if inputs are strings/None. Return 0 for invalid inputs.
     """
     # TODO: Implement logic
-    discount_amount = float(price)*float(discount_percent)*(0.01)
-    return discount_amount
+    if price is not None and discount_percent is not None:
+        if price == 0 or discount_percent == 0: 
+            return 0
+        else: 
+            discount_amount = float(price)*float(discount_percent)*(0.01)
+            return discount_amount
+    else: 
+        return 0
     
 
 # Test Case
