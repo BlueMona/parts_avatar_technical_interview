@@ -7,9 +7,10 @@ def format_sku(sku_string):
     """
     # TODO: Implement logic
     answer_string = sku_string.replace("-", " ")
+    answer_string = answer_string.title()
 
     return answer_string
 
 # Test: format_sku("brake-pads-ceramic") -> "Brake Pads Ceramic"
 
-format_sku("barke-pads-ceramic")
+print(format_sku("brake-pads-ceramic"))
