@@ -12,6 +12,7 @@ def count_categories(categories):
         else:
             my_dict[item] = 1   
 
+    return my_dict
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']
