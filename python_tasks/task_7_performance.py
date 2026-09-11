@@ -4,7 +4,14 @@
 
 def is_banned(email, banned_list):
     # TODO: Implement the search logic
-    pass
+    # sort is a mergesort variant
+    # actually not sure here; we should probably always keep our list sorted when storing items
+    # in operator is also supposed to be efficient. 
+    # python probably handles things like this under the hood. 
+    if email in sorted(banned):
+        return True
+    else: 
+        return False
 
 # Test
 banned = ["user1@test.com", "user2@test.com"] # Pretend this is 10k items

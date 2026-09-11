@@ -4,7 +4,9 @@
 
 def update_inventory(current, updates):
     # TODO: Implement merge logic
-    pass
+     # by default right hand overwrites left; requires python >= 3.9.0
+    updated = current_inv | new_stock
+    return updated
 
 # Test Case
 current_inv = {'Brakes': 10, 'Oil': 5}
